@@ -1,0 +1,73 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    @apply bg-[#f2fefe] text-gray-900;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0.6;
+    }
+    50% {
+      transform: translateY(-100px) scale(1.1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 0.6;
+    }
+    
+  }
+
+  @keyframes spinOrbit {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  @keyframes pulse-slow {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.2;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.4;
+    }
+  }
+  .animate-pulse-slow {
+    animation: pulse-slow 6s ease-in-out infinite;
+  }
+
+
+
+
+/* animation for background for whole body  */
+  @keyframes gradient-move {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .animate-gradient-move {
+    animation: gradient-move 6s ease infinite;
+    background-size: 200% 200%;
+    -webkit-animation: gradient-move 6s ease infinite;
+}
+  
