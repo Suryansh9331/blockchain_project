@@ -1,9 +1,9 @@
 import React from "react";
-import AboutSection from "../components/aboutsection";
+import AboutSection from "../../components/aboutsection";
 
-import CryptoHologramCTA from "../components/hologram";
-import about from "../assets/about.png";
-import about2 from "../assets/about2.png";
+import CryptoHologramCTA from "../../components/hologram";
+import about from "../../assets/about.png";
+import about2 from "../../assets/about2.png";
 
 export default function WhyChooseUs() {
   return (
@@ -25,7 +25,13 @@ export default function WhyChooseUs() {
         text6="  Where there is a need for honest, objective feedback and advice free from politics and self-interest, Cryptosec is adept to give dispassionate and impartial advice to settle outcomes objectively."
       />
 
-      <CryptoHologramCTA />
+<CryptoHologramCTA
+        backgroundImage={about}
+        heading="   Let us help you realize and protect the"
+        subheading="  benefits of the new  economy"
+        ctaLink="/contact"
+        ctaText="Contact Us"
+      />
     </>
   );
 }

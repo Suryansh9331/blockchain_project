@@ -1,10 +1,10 @@
 // components/Layout.jsx
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Topbar from "./topbar";
-import Navbar from "./navbar";
-import CryptoFooter from "./footer";
-import Header from "./header";
+import Topbar from "./layout/topbar";
+import Navbar from "./layout/navbar";
+import CryptoFooter from "./layout/footer";
+import Header from "./layout/header";
 import ContactHeader from "./contact_head"; 
 
 export default function Layout({ children }) {
@@ -87,6 +87,22 @@ export default function Layout({ children }) {
               " It ensures that organizations can act decisively in the face of a crisis, minimizing damage and preserving both assets and reputation.",
             href: "",
           },
+        ],
+      },
+      "/Services/crypto-financial-crime-services": {
+        title: "Services",
+        description:
+          " Crypto Financial Crime Services",
+        links: [
+         
+        ],
+      },
+      "/Services/crypto-due-diligence": {
+        title: "Services",
+        description:
+          " Crypto Due Diligence",
+        links: [
+         
         ],
       },
   

@@ -37,28 +37,17 @@ const megaMenuItems = {
 
       link: "/Services/web3-security",
     },
-    // {
-    //   title: "Crypto Investigations",
-    //   description: "Trace & recover digital assets.",
+    {
+      title: "➤ Crypto Financial Crime Services",
 
-    //   submenu: [
-    //     {
-    //       title: "Chain Analysis",
-    //       description: "Track movements",
-    //       link: "/services/investigations/chain",
-    //     },
-    //     {
-    //       title: "Forensics",
-    //       description: "Analyze exploits",
-    //       link: "/services/investigations/forensics",
-    //     },
-    //   ],
-    // },
-    // {
-    //   title: "Compliance & KYC",
-    //   description: "AML solutions for digital assets.",
-    //   link: "/services/compliance",
-    // },
+      link: "/Services/crypto-financial-crime-services",
+    },
+    {
+      title: "➤ Crypto Due Diligence",
+
+      link: "/Services/crypto-due-diligence",
+    },
+   
   ],
 };
 

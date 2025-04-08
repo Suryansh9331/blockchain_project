@@ -1,10 +1,10 @@
 
 import React from 'react'
-import AboutSection from "../components/aboutsection"
-import CryptoSecurityInfo  from "../components/about_last"
-import CryptoHologramCTA from "../components/hologram";
-import about from "../assets/about.png";
-import about2 from "../assets/about2.png";
+import AboutSection from "../../components/aboutsection"
+import CryptoSecurityInfo  from "../../components/about_last"
+import CryptoHologramCTA from "../../components/hologram";
+import about from "../../assets/about.png";
+import about2 from "../../assets/about2.png";
 
 export default function About() {
   return (
@@ -54,7 +54,13 @@ export default function About() {
               Security Services."
       />
    <CryptoSecurityInfo />
-    <CryptoHologramCTA/>
+   <CryptoHologramCTA
+        backgroundImage={about}
+        heading="   Let us help you realize and protect the"
+        subheading="  benefits of the new  economy"
+        ctaLink="/contact"
+        ctaText="Contact Us"
+      />
          
    </>
   )

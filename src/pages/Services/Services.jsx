@@ -1,9 +1,12 @@
 import React from "react";
-import CardGrid from "../components/cardgrid";
-import CryptoServices from "../components/web3";
-import monitoring from "../assets/monitoring.png";
-import pc from "../assets/pc.png";
-export default function Contact() {
+import CardGrid from "../../components/cardgrid";
+import CryptoServices from "../../components/web3";
+import monitoring from "../../assets/monitoring.png";
+import pc from "../../assets/pc.png";
+import CryptoHologramCTA from "../../components/hologram";
+import about from "../../assets/about.png"
+import { link } from "framer-motion/client";
+export default function Services() {
   return (
     <>
       <CryptoServices
@@ -17,8 +20,8 @@ export default function Contact() {
         serviceSection={{
           title: "All Our Services",
           services: [
-            { label: "Financial Crime" },
-            { label: "Crypto Investigations" },
+            { label: "Crypto, Blockchain, DeFi, Web3 Security & Privacy Services", link: "/Services/web3-security" },
+            { label: "Crypto Financial Crime Services", link:"/Services/Crypto-financial-crime-services" },
             { label: "Cybersecurity & Privacy" },
           ],
           description: [
@@ -50,6 +53,13 @@ export default function Contact() {
         ctaLink="/contact"
       />
       <CardGrid />
+      <CryptoHologramCTA
+        backgroundImage={about}
+        heading=" we manage Crypto, Blockchain, DeFi, Web3 Security & Privacy Services"
+        subheading=" We’re waiting to hear from you"
+        ctaLink="/contact"
+        ctaText="Contact Us"
+      />
     </>
   );
 }
