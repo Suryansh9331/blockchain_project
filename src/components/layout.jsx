@@ -28,7 +28,7 @@ export default function Layout({ children }) {
         title: "Protecting The",
         description: "Decentralized Future",
         links: [
-          { title: "CRYPTO INVESTIGATIONS & INCIDENT RESPONSE", href: "/Services/crypto-financial-crime-services" },
+          { title: "CRYPTO INVESTIGATIONS & INCIDENT RESPONSE", href: "/Services/Crypto-financial-crime-services" },
           {
             title: "CRYPTO ,BLOCKCHAIN,WEB3 SECURITY, TRUST & PRIVACY",
             href: "/Services/web3-security",
