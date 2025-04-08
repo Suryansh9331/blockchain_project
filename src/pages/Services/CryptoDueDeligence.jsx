@@ -70,7 +70,9 @@ export default function DueDiligence() {
               label: "Crypto Financial Crime Services",
               link: "/Services/Crypto-financial-crime-services",
             },
-            { label: "Cybersecurity & Privacy" },
+            { label: "Crypto-due-diligence" ,
+              link: "/Services/crypto-due-diligence",
+            },
           ],
           description: [
             "Crypto investigations and crypto due diligence are crucial for assessing the risks and compliance associated with crypto-related activities, whether it’s a business partnership, investment opportunity, competitive intelligence, or regulatory inquiry. They provide a detailed understanding of the parties involved, the nature of the transactions, the source of funds, and adherence to legal and regulatory requirements. In an environment where transparency, legality, and trust are paramount, Crypto Investigations for Due Diligence act as a safeguard, ensuring that engagements with crypto assets are conducted responsibly and ethically.",

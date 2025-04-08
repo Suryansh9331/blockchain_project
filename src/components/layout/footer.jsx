@@ -213,7 +213,9 @@ export default function CryptoFooter() {
               height: `${60 + Math.random() * 80}px`,
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
-              animation: `float ${8 + Math.random() * 10}s ease-in-out infinite`,
+              animation: `float ${
+                8 + Math.random() * 10
+              }s ease-in-out infinite`,
               animationDelay: `${Math.random() * 2}s`,
             }}
           ></div>
@@ -229,7 +231,7 @@ export default function CryptoFooter() {
         {/* Logo */}
         <div className="space-y-4 mx-auto sm:mx-0">
           <img
-            src="/logo.svg"
+            src=""
             alt="Blockchain Logo"
             className="w-28 sm:w-32 mx-auto sm:mx-0"
           />
@@ -246,9 +248,9 @@ export default function CryptoFooter() {
           {[
             { name: "Home", path: "/" },
             { name: "About", path: "/about" },
-            // { name: "Approach", path: "/approach" },
-            { name: "Services", path: "/services/web3-security" },
-            // { name: "Insights", path: "/insights" },
+
+            { name: "Services", path: "/Services/web3-security" },
+
             { name: "Contact", path: "/contact" },
           ].map((item, i) => (
             <Link
@@ -256,7 +258,9 @@ export default function CryptoFooter() {
               to={item.path}
               className="group flex items-center justify-center sm:justify-start gap-2 text-sm sm:text-base text-gray-800 hover:text-green-700 transition duration-300"
             >
-              <span className="group-hover:translate-x-1 transition-transform">➤</span>
+              <span className="group-hover:translate-x-1 transition-transform">
+                ➤
+              </span>
               <span>{item.name}</span>
             </Link>
           ))}
@@ -267,10 +271,15 @@ export default function CryptoFooter() {
           <h3 className="font-semibold text-lg md:text-xl text-gray-900 border-b border-black/10 pb-1">
             Legal
           </h3>
-          {["Privacy Policy", "Cookie Policy", "Terms and Conditions", "Statement on Unsolicited Outreach by Recruitment Agencies"].map((item, i) => (
+          {[
+            "Privacy Policy",
+            "Cookie Policy",
+            "Terms and Conditions",
+            "Statement on Unsolicited Outreach by Recruitment Agencies",
+          ].map((item, i) => (
             <a
               key={i}
-              href="#"
+              href="/"
               className="block text-sm sm:text-base text-gray-700 hover:text-green-700 transition"
             >
               {item}
@@ -320,19 +329,32 @@ export default function CryptoFooter() {
         transition={{ delay: 0.2, duration: 1 }}
       >
         <div className="flex justify-center gap-4">
-          {[Mail, Linkedin, Twitter, Instagram].map((Icon, i) => (
+          {[
+            { icon: Mail, link: "mailto:your-email@example.com" },
+            {
+              icon: Linkedin,
+              link: "https://www.linkedin.com/in",
+            },
+            { icon: Twitter, link: "https://twitter.com" },
+            { icon: Instagram, link: "https://instagram.com" },
+          ].map(({ icon: Icon, link }, i) => (
             <a
               key={i}
-              href="#"
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white hover:bg-[rgb(16,253,228)] transition-transform duration-300 hover:scale-110"
             >
               <Icon size={18} />
             </a>
           ))}
         </div>
-        <p className="text-[rgb(22,78,99)] font-semibold tracking-widest text-sm md:text-base">
+        <a
+          href="/"
+          className="block text-[rgb(22,78,99)] font-semibold tracking-widest text-sm md:text-base hover:text-lg"
+        >
           © BLOCKCHAIN
-        </p>
+        </a>
       </motion.div>
 
       <style>

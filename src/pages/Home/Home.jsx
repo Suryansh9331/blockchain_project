@@ -20,7 +20,7 @@ export default function Home() {
       description:
         " Blockchain and related technologies have already begun to revolutionize the ways in which users can organize data, value (ownership) and processes. But the corresponding regulatory and technological boundaries remain largely unsettled. Even the practical difference between centralized and decentralized finance beg to be universally defined. The reality is that it may take another decade to set clear boundaries for the playing field to a level befitting enterprise standards. Meanwhile, enterprise decision-makers face tremendous pressures to take advantage of – what is now widely accepted as – the unstoppable, inevitable changes sweeping across industries – with enterprise blockchains and related technologies; or else pay the very real opportunity costs of falling behind their blockchain-adopting competitors. The bottom line is that the technology and regulations could persist without clear direction for some time, but great enterprises cannot",
       image: scientist,
-      link: "/crypto-security",
+      link: "/Services/web3-security",
       ctaText: "Learn More",
     },
     {
@@ -28,7 +28,7 @@ export default function Home() {
       description:
         " Cybersecurity refers to the classical practices formulated from the 1970s onward to protect computer systems, networks, and programs from digital attacks – such as malware, viruses, phishing, backdoor, and other attacks. These approaches and technologies were formulated before the diffusion of new, cryptography-based emerging technologies (blockchain, cryptocurrencies and more) and solutions.  Crypto Security is a term that the industry has reclaimed (beyond its archaic uses in early military and communications technology vernacular) to describe the cybersecurity practices that extend into cryptography-based decentralization technologies such as distributed ledger technologies, blockchain, cross-chains networks, and their uses for DeFi, smart contracts, crypto assets and web3 – technologies that attract crypto-specific risks that cannot be mitigated by “traditional” cybersecurity controls alone.",
       image: bitcoin,
-      link: "/investigations-lifecycle",
+      link: "/Services/web3-security",
       ctaText: "Discover Life Cycle",
     },
     {
@@ -36,7 +36,7 @@ export default function Home() {
       description:
         "Cryptosec takes a holistic approach to crypto security & investigations, to anticipate, pinpoint & deliver targeted solutions for the critical crypto security & investigation needs of enterprise clients – pegged to their position within the crypto security & investigations life cycle – backed by tailored solutions to achieve comprehensive, end-to-end enterprise-grade crypto security coverage.  We guide enterprise clients to apprise & safely leverage distributed ledger technologies, cryptocurrencies, and other decentralization technologies in line with best  practices, to grant clients the Enterprise-Level Security Clearances they need to commence operations with formal approvals.",
       image: about3,
-      link: "/outstanding-security",
+      link:"/Services/web3-security",
       ctaText: "Secure Assets Now",
     },
     {
@@ -44,7 +44,7 @@ export default function Home() {
       description:
         "We work with our clients to assess and manage crypto risks and regulatory compliance including, through defining new target operating models, selecting and advising on the right technology solutions and transforming teams.We can work closely with your own firm’s investigators or we can provide investigative assistance through well-respected and experienced financial crime and cybercrime investigators.We guide clients to solve critical business challenges with seasoned financial crimes, cybersecurity and regulatory compliance executives. When you have a critical, time-sensitive business challenge and lack the appropriate internal resources, our experienced interim managers can be your solution. All of our interim executives have over 15 years of relevant experience.",
       image: menwithpc,
-      link: "/custodial-security",
+      link:"/Services/web3-security",
       ctaText: "Explore Custodial Security",
     },
   ];

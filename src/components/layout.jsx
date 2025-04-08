@@ -28,14 +28,14 @@ export default function Layout({ children }) {
         title: "Protecting The",
         description: "Decentralized Future",
         links: [
-          { title: "CRYPTO INVESTIGATIONS & INCIDENT RESPONSE", href: "/home" },
+          { title: "CRYPTO INVESTIGATIONS & INCIDENT RESPONSE", href: "/Services/crypto-financial-crime-services" },
           {
             title: "CRYPTO ,BLOCKCHAIN,WEB3 SECURITY, TRUST & PRIVACY",
-            href: "/home#section",
+            href: "/Services/web3-security",
           },
           {
             title: "CRYPTO & DEFI COMPLIANCE & ANTI-FINANCIAL CRIME",
-            href: "/home#section",
+            href: "/Services/crypto-due-diligence",
           },
         ],
       },
@@ -47,17 +47,17 @@ export default function Layout({ children }) {
           {
             title:
               "Our team works with enterprise decision-makers to achieve the highest standards of compliance for integrating blockchain networks, DLT, web3, cryptocurrencies, and related technologies with their existing legacy systems, practices, and regulatory requirements. To learn more about Cryptosec services see Crypto Security Services.",
-            href: "",
+            href: "/Services/crypto-financial-crime-services",
           },
           {
             title:
               "Our world-class expertise lies at the cross-sector of cybersecurity & privacy, financial crime risk management, monitoring, and investigations, regulatory compliance, and blockchain, distributed ledger, smart contracts, Web3, and related technologies .",
-            href: "",
+            href: "/Services/web3-security",
           },
           {
             title:
               "Cryptosec is a leading cybersecurity firm specializing in the protection of the decentralized future of finance, governance, and more .",
-            href: "",
+            href: "/Services/crypto-due-diligence",
           },
         ],
       },

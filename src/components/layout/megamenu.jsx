@@ -14,22 +14,7 @@ const megaMenuItems = {
       title: "➤Why Choose Us",
       link: "/about/why_choose_us",
     },
-    {
-      title: "➤Crypto Security” vs “Cybersecurity",
-
-      link: "/about/Crypto Security-Cybersecurity",
-    },
-    {
-      title: "➤No Bullshit Manifesto",
-
-      link: "/about/No-Bullshit-Manifesto",
-    },
-
-    {
-      title: " ➤Industry Qualifications",
-
-      link: "/about/industry-qualification",
-    },
+   
   ],
   services: [
     {

@@ -14,11 +14,11 @@ const ServicesGrid = () => {
       subtitle:
         "We deliver purpose-built assessments, security strategies, advice, architecture and implementations.",
       points: [
-        { text: "Blockchain Security", link: "/blockchain-security" },
-        { text: "Crypto Security", link: "/crypto-security" },
-        { text: "Cybersecurity", link: "/cybersecurity" },
-        { text: "Smart Contract Audits", link: "/smart-contract-audits" },
-        { text: "Web3 Threat Intelligence", link: "/web3-threat-intelligence" },
+        { text: "Blockchain Security",  },
+        { text: "Crypto Security", },
+        { text: "Cybersecurity", },
+        { text: "Smart Contract Audits", },
+        { text: "Web3 Threat Intelligence", },
       ],
     },
     {
@@ -29,11 +29,11 @@ const ServicesGrid = () => {
       subtitle:
         "Utilizing high-level blockchain forensics to recover digital assets and uncover cybercrime.",
       points: [
-        { text: "Crypto Investigations", link: "/crypto-investigations" },
-        { text: "Blockchain Forensics", link: "/blockchain-forensics" },
-        { text: "Crypto Tracing", link: "/crypto-tracing" },
-        { text: "Compliance Analytics", link: "/compliance-analytics" },
-        { text: "Digital Asset Recovery", link: "/digital-asset-recovery" },
+        { text: "Crypto Investigations" },
+        { text: "Blockchain Forensics" },
+        { text: "Crypto Tracing" },
+        { text: "Compliance Analytics" },
+        { text: "Digital Asset Recovery" },
       ],
     },
     {
@@ -47,11 +47,11 @@ const ServicesGrid = () => {
       subtitle:
         "Helping enterprises meet regulatory requirements in crypto and Web3.",
       points: [
-        { text: "KYC/AML Compliance", link: "/kyc-aml-compliance" },
-        { text: "Risk Assessment", link: "/risk-assessment" },
-        { text: "Audit Trail", link: "/audit-trail" },
-        { text: "Reporting Standards", link: "/reporting-standards" },
-        { text: "Policy Management", link: "/policy-management" },
+        { text: "KYC/AML Compliance" },
+        { text: "Risk Assessment" },
+        { text: "Audit Trail" },
+        { text: "Reporting Standards" },
+        { text: "Policy Management" },
       ],
     },
     {
@@ -62,11 +62,11 @@ const ServicesGrid = () => {
       subtitle:
         "Detect and mitigate cyber threats across blockchain infrastructure.",
       points: [
-        { text: "Real-Time Threat Detection", link: "/real-time-threat" },
-        { text: "Anomaly Monitoring", link: "/anomaly-monitoring" },
-        { text: "Dark Web Tracking", link: "/dark-web-tracking" },
-        { text: "Fraud Detection", link: "/fraud-detection" },
-        { text: "Incident Reporting", link: "/incident-reporting" },
+        { text: "Real-Time Threat Detection" },
+        { text: "Anomaly Monitoring" },
+        { text: "Dark Web Tracking" },
+        { text: "Fraud Detection" },
+        { text: "Incident Reporting" },
       ],
     },
     {
@@ -80,11 +80,11 @@ const ServicesGrid = () => {
       subtitle:
         "Ensure security and correctness of smart contracts before deployment.",
       points: [
-        { text: "Automated Scanning", link: "/automated-scanning" },
-        { text: "Manual Review", link: "/manual-review" },
-        { text: "Security Analysis", link: "/security-analysis" },
-        { text: "Gas Optimization", link: "/gas-optimization" },
-        { text: "Code Validation", link: "/code-validation" },
+        { text: "Automated Scanning" },
+        { text: "Manual Review"},
+        { text: "Security Analysis" },
+        { text: "Gas Optimization"},
+        { text: "Code Validation" },
       ],
     },
     {
@@ -95,11 +95,11 @@ const ServicesGrid = () => {
       subtitle:
         "Track and recover lost, stolen, or inaccessible digital assets.",
       points: [
-        { text: "Forensics Tools", link: "/forensics-tools" },
-        { text: "Chain Analysis", link: "/chain-analysis" },
-        { text: "Wallet Recovery", link: "/wallet-recovery" },
-        { text: "Scam Tracing", link: "/scam-tracing" },
-        { text: "Expert Witness", link: "/expert-witness" },
+        { text: "Forensics Tools" },
+        { text: "Chain Analysis" },
+        { text: "Wallet Recovery" },
+        { text: "Scam Tracing" },
+        { text: "Expert Witness" },
       ],
     },
     {
@@ -112,11 +112,11 @@ const ServicesGrid = () => {
       title: "PRIVACY & DATA PROTECTION",
       subtitle: "Comprehensive privacy solutions for blockchain apps.",
       points: [
-        { text: "Data Minimization", link: "/data-minimization" },
-        { text: "Encryption Protocols", link: "/encryption-protocols" },
-        { text: "GDPR Compliance", link: "/gdpr-compliance" },
-        { text: "Zero-Knowledge Proofs", link: "/zk-proofs" },
-        { text: "User Consent Management", link: "/consent-management" },
+        { text: "Data Minimization" },
+        { text: "Encryption Protocols" },
+        { text: "GDPR Compliance"},
+        { text: "Zero-Knowledge Proofs" },
+        { text: "User Consent Management"},
       ],
     },
     {
@@ -127,11 +127,11 @@ const ServicesGrid = () => {
       subtitle:
         "Insightful blockchain data for governance and decision-making.",
       points: [
-        { text: "On-Chain Analysis", link: "/on-chain-analysis" },
-        { text: "Token Monitoring", link: "/token-monitoring" },
-        { text: "DeFi Risk Scores", link: "/defi-risk-scores" },
-        { text: "DApp Intelligence", link: "/dapp-intelligence" },
-        { text: "Trend Forecasting", link: "/trend-forecasting" },
+        { text: "On-Chain Analysis" },
+        { text: "Token Monitoring" },
+        { text: "DeFi Risk Scores" },
+        { text: "DApp Intelligence" },
+        { text: "Trend Forecasting"},
       ],
     },
   ];
@@ -205,7 +205,7 @@ const ServicesGrid = () => {
                   <li key={idx}>
                     <a
                       href={point.link}
-                      className="text-blue-900 hover:underline"
+                      className="text-green-700"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -215,7 +215,7 @@ const ServicesGrid = () => {
                 ))}
               </ul>
               <a
-                href="#"
+                href="/Services/web3-security"
                 className="mt-6 inline-block px-5 py-2 text-sm sm:text-base border border-green-400 rounded-md text-gray-800 bg-[rgb(16,253,228)] hover:text-black transition duration-300"
               >
                 Learn More

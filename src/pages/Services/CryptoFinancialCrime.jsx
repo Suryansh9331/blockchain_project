@@ -21,11 +21,20 @@ export default function FinancialCrime() {
         }}
         serviceSection={{
           title: "All Our Services",
-          services: [
-            { label: "Crypto, Blockchain, DeFi, Web3 Security & Privacy Services", link: "/Services/web3-security" },
-            { label: "Crypto Financial Crime Services", link:"/Services/Crypto-financial-crime-services" },
-            { label: "Cybersecurity & Privacy" },
-          ],
+        services: [
+                   {
+                     label:
+                       "Crypto, Blockchain, DeFi, Web3 Security & Privacy Services",
+                     link: "/Services/web3-security",
+                   },
+                   {
+                     label: "Crypto Financial Crime Services",
+                     link: "/Services/Crypto-financial-crime-services",
+                   },
+                   { label: "Crypto-due-diligence" ,
+                     link: "/Services/crypto-due-diligence",
+                   },
+                 ],
           description: [
             "In recent years, financial crimes have become a multi-billion dollar global phenomenon with criminal methodologies adapting and changing faster than governments, legislators, enforcement agencies and businesses can keep up. The associated risks to business and financial institutions are very real and can lead to regulatory fines, reputational damage, loss of customer base and even imprisonment.",
             "In light of the recent revelations, crypto businesses will have to confront increasingly complex compliance requirements as they are being held to stricter standards of accountability in matters of financial crime. At the same time, customers are demanding a better customer experience. ",

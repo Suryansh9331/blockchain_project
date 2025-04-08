@@ -20,10 +20,19 @@ export default function Services() {
         serviceSection={{
           title: "All Our Services",
           services: [
-            { label: "Crypto, Blockchain, DeFi, Web3 Security & Privacy Services", link: "/Services/web3-security" },
-            { label: "Crypto Financial Crime Services", link:"/Services/Crypto-financial-crime-services" },
-            { label: "Cybersecurity & Privacy" },
-          ],
+                     {
+                       label:
+                         "Crypto, Blockchain, DeFi, Web3 Security & Privacy Services",
+                       link: "/Services/web3-security",
+                     },
+                     {
+                       label: "Crypto Financial Crime Services",
+                       link: "/Services/Crypto-financial-crime-services",
+                     },
+                     { label: "Crypto-due-diligence" ,
+                       link: "/Services/crypto-due-diligence",
+                     },
+                   ],
           description: [
             "Organizations venturing into the world of digital finance must navigate a landscape filled with potential vulnerabilities and evolving threat vectors. Crypto, Blockchain, DeFi, Web3 Security & Privacy Services are not merely optional; they are essential for responsible participation in this dynamic ecosystem. These services provide a comprehensive approach to safeguarding digital assets, protecting user privacy, ensuring regulatory compliance, and building trust among stakeholders.",
             " ",
