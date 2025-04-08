@@ -97,7 +97,7 @@ export default function Layout({ children }) {
          
         ],
       },
-      "/Services/crypto-due-diligence": {
+      "/Services/Crypto-due-diligence": {
         title: "Services",
         description:
           " Crypto Due Diligence",
