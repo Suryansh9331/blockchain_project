@@ -89,7 +89,7 @@ export default function Layout({ children }) {
           },
         ],
       },
-      "/Services/crypto-financial-crime-services": {
+      "/Services/Crypto-financial-crime-services": {
         title: "Services",
         description:
           " Crypto Financial Crime Services",
