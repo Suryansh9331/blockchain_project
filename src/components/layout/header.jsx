@@ -1,7 +1,7 @@
 // Header.jsx
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-
+import logobc from "../../assets/logobc.png";
 export default function Header({ title, description, links }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const bubbleRef = useRef(null);
@@ -57,6 +57,30 @@ export default function Header({ title, description, links }) {
             }}
           ></div>
         ))}
+      </div>
+
+      {/* Fading Logo Background Image */}
+      <div className="absolute right-0 bottom-0 w-full h-full z-0 pointer-events-none">
+        <motion.img
+          src={logobc}
+          alt="Blurred Logo"
+          className="w-[500px] sm:w-[700px] lg:w-[850px] absolute right-8 bottom-0 pointer-events-none"
+          animate={{
+            opacity: [0.2, 0.8, 0.8, 0.2], 
+            filter: [
+              "blur(20px)", 
+              "blur(0px)", 
+              "blur(0px)", 
+              "blur(20px)", 
+            ],
+          }}
+          transition={{
+            duration: 12,
+            ease: "easeInOut",
+            repeat: Infinity,
+            times: [0, 0.3, 0.6, 1], 
+          }}
+        />
       </div>
 
       {/* Hero Content */}

@@ -1,21 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   GoogleMap,
   LoadScript,
   Marker,
-  MarkerClusterer,
 } from "@react-google-maps/api";
-
 
 const containerStyle = {
   width: "100%",
   height: "500px",
 };
 
-const center = {
-  lat: 20.5937, 
+const defaultCenter = {
+  lat: 20.5937,
+  lng: 78.9629,
 };
-
 
 const markers = [
   { lat: 37.7749, lng: -122.4194, title: "San Francisco" },
@@ -26,18 +24,46 @@ const markers = [
 ];
 
 export default function MovableMap() {
+  const [currentLocation, setCurrentLocation] = useState(null);
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      const watcher = navigator.geolocation.watchPosition(
+        (position) => {
+          setCurrentLocation({
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          });
+        },
+        (error) => {
+          console.error("Error getting location", error);
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 5000,
+          maximumAge: 0,
+        }
+      );
+
+      // Cleanup watcher on unmount
+      return () => navigator.geolocation.clearWatch(watcher);
+    } else {
+      alert("Geolocation is not supported by this browser.");
+    }
+  }, []);
+
   return (
     <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
       <GoogleMap
         mapContainerStyle={containerStyle}
-        center={center}
-        zoom={2}
+        center={currentLocation || defaultCenter}
+        zoom={currentLocation ? 12 : 2}
         options={{
-          disableDefaultUI: false, 
+          disableDefaultUI: false,
           draggable: true,
         }}
       >
-        {/* Add Markers */}
+        {/* Static Markers */}
         {markers.map((marker, index) => (
           <Marker
             key={index}
@@ -45,6 +71,17 @@ export default function MovableMap() {
             title={marker.title}
           />
         ))}
+
+        {/* Live Location Marker */}
+        {currentLocation && (
+          <Marker
+            position={currentLocation}
+            title="You are here"
+            icon={{
+              url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+            }}
+          />
+        )}
       </GoogleMap>
     </LoadScript>
   );

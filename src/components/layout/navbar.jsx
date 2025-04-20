@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logohead from "../../assets/logohead.png"
 import {
   faEnvelope,
   faSearch,
@@ -46,86 +47,92 @@ export default function Navbar({ topbarHeight = 48 }) {
         }`}
         style={{ top: `${topbarHeight}px` }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-3 flex justify-between items-center">
-          <Link
-            to="/"
-            className="text-lg sm:text-xl md:text-2xl font-extrabold text-cyan-900 drop-shadow hover:scale-105 transition-transform duration-300"
-          >
-            BlockChain
-          </Link>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-3 flex justify-between items-center">
+  <Link
+    to="/"
+    className="flex items-center gap-2 text-lg sm:text-xl md:text-2xl font-extrabold text-cyan-900 drop-shadow hover:scale-105 transition-transform duration-300"
+  >
+    <img
+      src={logohead} // Replace with your logo image path
+      alt="Logo"
+      className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+    />
+    BlockChain
+  </Link>
 
-          <ul className="hidden lg:flex flex-wrap gap-3 md:gap-6 lg:gap-10 pl-2 text-xs md:text-sm font-medium text-gray-900">
-            {navItems.map((item, i) => (
-              <li key={i} className="relative group">
-                {item.mega ? (
-                  <button
-                    onClick={() => setActiveMenu(item.mega)}
-                    className="flex items-center gap-1 hover:text-cyan-800 transition duration-300 group-hover:underline"
-                  >
-                    {item.name}
-                    <FontAwesomeIcon icon={faChevronDown} className="text-xs" />
-                  </button>
-                ) : (
-                  <Link
-                    to={item.path}
-                    className="hover:text-cyan-800 transition duration-300 group-hover:underline"
-                  >
-                    {item.name}
-                  </Link>
-                )}
-              </li>
-            ))}
-          </ul>
-
-          <div className="hidden lg:flex gap-3 md:gap-4 items-center text-gray-700 text-lg md:text-lg pr-1">
-            <a
-              href="mailto:your@email.com"
-              title="Email"
-              className="hover:text-cyan-800 transition-transform duration-300 hover:scale-110"
-            >
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-cyan-800 transition-transform duration-300 hover:scale-110"
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-cyan-800 transition-transform duration-300 hover:scale-110"
-            >
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-cyan-800 transition-transform duration-300 hover:scale-110"
-            >
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <button
-              title="Search"
-              onClick={() => setShowSearch(true)}
-              className="hover:text-cyan-800 transition-transform duration-300 hover:scale-110"
-            >
-              <FontAwesomeIcon icon={faSearch} />
-            </button>
-          </div>
-
+  <ul className="hidden lg:flex flex-wrap gap-3 md:gap-6 lg:gap-10 pl-2 text-xs md:text-sm font-medium text-gray-900">
+    {navItems.map((item, i) => (
+      <li key={i} className="relative group">
+        {item.mega ? (
           <button
-            className="lg:hidden text-lg sm:text-xl text-cyan-900 focus:outline-none"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle Menu"
+            onClick={() => setActiveMenu(item.mega)}
+            className="flex items-center gap-1 hover:text-cyan-800 transition duration-300 group-hover:underline"
           >
-            <FontAwesomeIcon icon={mobileMenuOpen ? faTimes : faBars} />
+            {item.name}
+            <FontAwesomeIcon icon={faChevronDown} className="text-xs" />
           </button>
-        </div>
+        ) : (
+          <Link
+            to={item.path}
+            className="hover:text-cyan-800 transition duration-300 group-hover:underline"
+          >
+            {item.name}
+          </Link>
+        )}
+      </li>
+    ))}
+  </ul>
+
+  <div className="hidden lg:flex gap-3 md:gap-4 items-center text-gray-700 text-lg md:text-lg pr-1">
+    <a
+      href="mailto:your@email.com"
+      title="Email"
+      className="hover:text-cyan-800 transition-transform duration-300 hover:scale-110"
+    >
+      <FontAwesomeIcon icon={faEnvelope} />
+    </a>
+    <a
+      href="https://linkedin.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-cyan-800 transition-transform duration-300 hover:scale-110"
+    >
+      <FontAwesomeIcon icon={faLinkedin} />
+    </a>
+    <a
+      href="https://twitter.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-cyan-800 transition-transform duration-300 hover:scale-110"
+    >
+      <FontAwesomeIcon icon={faTwitter} />
+    </a>
+    <a
+      href="https://instagram.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-cyan-800 transition-transform duration-300 hover:scale-110"
+    >
+      <FontAwesomeIcon icon={faInstagram} />
+    </a>
+    <button
+      title="Search"
+      onClick={() => setShowSearch(true)}
+      className="hover:text-cyan-800 transition-transform duration-300 hover:scale-110"
+    >
+      <FontAwesomeIcon icon={faSearch} />
+    </button>
+  </div>
+
+  <button
+    className="lg:hidden text-lg sm:text-xl text-cyan-900 focus:outline-none"
+    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+    aria-label="Toggle Menu"
+  >
+    <FontAwesomeIcon icon={mobileMenuOpen ? faTimes : faBars} />
+  </button>
+</div>
+
 
         <AnimatePresence>
           {mobileMenuOpen && (
