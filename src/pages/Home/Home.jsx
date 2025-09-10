@@ -12,7 +12,7 @@ import scientist from "../../assets/scientist.png";
 import about3 from "../../assets/about3.jpg";
 import menwithpc from "../../assets/menwithpc.png";
 export default function Home() {
-  const [topbarHeight, setTopbarHeight] = useState(48); // default to visible
+  const [topbarHeight, setTopbarHeight] = useState(48); 
   const [showSearch, setShowSearch] = useState(false);
   const sections = [
     {
